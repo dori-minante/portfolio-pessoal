@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Permite que o site se adapte a celulares e tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Dori</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho com logo, menu e botão de tema -->
+    <header>
+        <div class="logo">Dori</div>
+
+        <div class="area-menu">
+            <button id="botao-tema" title="Alterar tema">🌙</button>
+
+            <button id="botao-menu">☰</button>
+
+            <nav id="menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre mim</a>
+                <a href="#formacao">Formação</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Seção inicial do portfólio -->
+        <section id="inicio" class="hero">
+
+            <div class="hero-imagem">
+                <div class="forma-fundo"></div>
+
+                <img src="img/foto-perfil.jpg" alt="Foto de perfil" class="foto-perfil">
+            </div>
+
+            <div class="hero-texto">
+                <p class="texto-pequeno">Olá, eu sou a </p>
+
+                <h1>Dori</h1>
+
+                <h2>Desenvolvedora Web</h2>
+
+                <p>
+                    Sou estudante de Ciência da Computação e este é o meu portfólio
+                    online criado para apresentar um pouco sobre mim, minha formação,
+                    meus projetos e minhas formas de contato.
+                </p>
+
+                <div class="botoes">
+                    <a href="#portfolio" class="botao-principal">Ver portfólio</a>
+                    <a href="#contato" class="botao-secundario">Contato</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Seção obrigatória: Sobre mim -->
+        <section id="sobre" class="secao">
+            <h2>Sobre mim</h2>
+
+            <p>
+                Meu nome é Dori. Sou uma pessoa interessada por tecnologia,
+                desenvolvimento web e criação de soluções digitais. Atualmente estou
+                estudando os fundamentos de programação e criando meus primeiros projetos.
+            </p>
+
+            <p>
+                Gosto de aprender coisas novas, ser gamer no tempo livre, e praticar programação para entender como os sites
+                são construídos. Este portfólio foi desenvolvido como parte dos meus estudos
+                usando apenas HTML, CSS e JavaScript.
+            </p>
+
+            <p>
+                Meus hobbies incluem estudar, assistir conteúdos sobre tecnologia, jogar,
+                acompanhar novidades da área e praticar projetos pessoais.
+            </p>
+        </section>
+
+        <!-- Seção obrigatória: Formação -->
+        <section id="formacao" class="secao">
+            <h2>Formação</h2>
+
+            <div class="card">
+                <h3>Formação acadêmica</h3>
+
+                <p>
+                    Atualmente estou cursando Ciência da Computação e estudando conteúdos
+                    relacionados a programação, lógica, banco de dados e desenvolvimento web.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Cursos</h3>
+
+                <ul>
+                    <li>HTML5 básico</li>
+                    <li>CSS3 básico</li>
+                    <li>JavaScript básico</li>
+                    <li>Lógica de programação</li>
+                    <li>Git e GitHub</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Idiomas</h3>
+
+                <p>Português: nativo</p>
+                <p>Inglês: básico/intermediário, em desenvolvimento.</p>
+            </div>
+        </section>
+
+        <!-- Seção obrigatória: Portfólio -->
+        <section id="portfolio" class="secao">
+            <h2>Portfólio</h2>
+
+            <p>
+                Abaixo estão alguns projetos e exercícios desenvolvidos durante meus estudos.
+            </p>
+
+            <div class="area-projetos">
+
+                <div class="projeto">
+                    <h3>Site para Barbearia</h3>
+
+                    <p>
+                        Projeto simples feito com HTML e CSS para praticar estrutura,
+                        textos, links, imagens e estilos.
+                    </p>
+
+                    <a href="https://github.com/dori-minante/Projeto-Barbearia-Alura" target="_blank">Ver projeto</a>
+                </div>
+
+                <div class="projeto">
+                    <h3>Blog Pessoal</h3>
+
+                    <p>
+                        O projeto consiste em um blog pessoal, no qual os usuários têm a capacidade de se cadastrar e criar uma conta. Uma vez logados, eles podem criar seus próprios temas e publicações.
+                    </p>
+
+                    <a href="https://github.com/dori-minante/blog-pessoal-client" target="_blank">Ver projeto</a>
+                </div>
+
+                <div class="projeto">
+                    <h3>Site para Farmácia</h3>
+
+                    <p>
+                        Aplicativo para farmácia, onde usuários podem visualizar os produtos disponíveis, seus preços e descrições, e o administrador pode cadastrar novos produtos, editar os existentes e excluir produtos que não estão mais disponíveis.
+                    </p>
+
+                    <a href="https://github.com/dori-minante/Farmacia-front" target="_blank">Ver projeto</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção obrigatória: Contato -->
+        <section id="contato" class="secao">
+            <h2>Contato</h2>
+
+            <p>
+                Preencha o formulário abaixo para entrar em contato comigo.
+            </p>
+
+            <form id="formulario-contato">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
+
+            <p id="mensagem-retorno"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Dori - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
