@@ -8,17 +8,36 @@ botaoMenu.addEventListener("click", function() {
 
 
 // Alteração de tema claro/escuro
+// Alteração de tema escuro/claro
 let botaoTema = document.getElementById("botao-tema");
 
 botaoTema.addEventListener("click", function() {
-    document.body.classList.toggle("tema-escuro");
+    document.body.classList.toggle("tema-claro");
 
-    if (document.body.classList.contains("tema-escuro")) {
-        botaoTema.textContent = "☀️";
-    } else {
+    if (document.body.classList.contains("tema-claro")) {
         botaoTema.textContent = "🌙";
+    } else {
+        botaoTema.textContent = "☀️";
     }
 });
+
+// Animação das seções ao rolar a página
+let elementosAnimados = document.querySelectorAll(".animar");
+
+function mostrarAoRolar() {
+    for (let i = 0; i < elementosAnimados.length; i++) {
+        let elemento = elementosAnimados[i];
+        let posicao = elemento.getBoundingClientRect().top;
+        let alturaTela = window.innerHeight;
+
+        if (posicao < alturaTela - 100) {
+            elemento.classList.add("aparecer");
+        }
+    }
+}
+
+window.addEventListener("scroll", mostrarAoRolar);
+window.addEventListener("load", mostrarAoRolar);
 
 
 // Validação do formulário de contato

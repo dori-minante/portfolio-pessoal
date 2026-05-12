@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- Permite que o site se adapte a celulares e tablets -->
+    <!-- Responsividade para celular e tablet -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Portfólio - Dori</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Cabeçalho com logo, menu e botão de tema -->
+    <!-- Cabeçalho com menu de navegação -->
     <header>
-        <div class="logo">Dori</div>
+        <div class="logo">Dori &lt;/&gt;</div>
 
         <div class="area-menu">
-            <button id="botao-tema" title="Alterar tema">🌙</button>
+            <button id="botao-tema" title="Alterar tema">☀️</button>
 
-            <button id="botao-menu">☰</button>
+            <button id="botao-menu" title="Abrir menu">☰</button>
 
             <nav id="menu">
                 <a href="#inicio">Início</a>
                 <a href="#sobre">Sobre mim</a>
                 <a href="#formacao">Formação</a>
+                <a href="#habilidades">Habilidades</a>
                 <a href="#portfolio">Portfólio</a>
                 <a href="#contato">Contato</a>
             </nav>
@@ -32,96 +34,194 @@
 
     <main>
 
-        <!-- Seção inicial do portfólio -->
+        <!-- Seção inicial -->
         <section id="inicio" class="hero">
 
-            <div class="hero-imagem">
-                <div class="forma-fundo"></div>
-
-                <img src="img/foto-perfil.jpg" alt="Foto de perfil" class="foto-perfil">
-            </div>
-
             <div class="hero-texto">
-                <p class="texto-pequeno">Olá, eu sou a </p>
+                <p class="texto-pequeno">Olá, eu sou</p>
 
                 <h1>Dori</h1>
 
-                <h2>Desenvolvedora Web</h2>
+                <h2>Desenvolvedora em formação | Ciência da Computação</h2>
 
                 <p>
-                    Estudante de Ciência da Computação e desenvolvedora em formação, com foco em desenvolvimento de software e soluções web.
-                    Sou formada em Biologia e estou em transição para a área de Tecnologia da Informação, unindo minha experiência com pesquisa, análise de dados e resolução de problemas ao desenvolvimento de sistemas.
-                    <!-- Sou estudante de Ciência da Computação e este é o meu portfólio
-                    online criado para apresentar um pouco sobre mim, minha formação,
-                    meus projetos e minhas formas de contato.
-                    -->
+                    Profissional de Biologia em transição para a área de Tecnologia da Informação,
+                    com foco em desenvolvimento de software e soluções web.
+                </p>
+
+                <p>
+                    Minha trajetória une análise de dados, pensamento investigativo e aprendizado
+                    contínuo para criar projetos úteis e bem estruturados.
                 </p>
 
                 <div class="botoes">
-                    <a href="#portfolio" class="botao-principal">Ver portfólio</a>
-                    <a href="#contato" class="botao-secundario">Contato</a>
+                    <a href="#portfolio" class="botao-principal">Ver meus projetos</a>
+                    <a href="#contato" class="botao-secundario">Entrar em contato</a>
                 </div>
+
+                <div class="links-sociais">
+                    <a href="https://github.com/seu-usuario" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/seu-usuario" target="_blank">LinkedIn</a>
+                    <a href="mailto:seuemail@email.com">E-mail</a>
+                </div>
+            </div>
+
+            <div class="hero-imagem">
+                <div class="circulo-decorativo"></div>
+                <img src="img/foto-perfil.jpg" alt="Foto de perfil de Dori" class="foto-perfil">
+            </div>
+
+        </section>
+
+        <!-- Cards de destaque -->
+        <section class="destaques animar">
+
+            <div class="card-destaque">
+                <h3>Transição para TI</h3>
+                <p>
+                    Da Biologia para o desenvolvimento de software, unindo pesquisa,
+                    análise e tecnologia.
+                </p>
+            </div>
+
+            <div class="card-destaque">
+                <h3>Desenvolvimento FullStack</h3>
+                <p>
+                    Estudos e práticas com frontend, backend, banco de dados,
+                    Git e GitHub.
+                </p>
+            </div>
+
+            <div class="card-destaque">
+                <h3>Projetos em evolução</h3>
+                <p>
+                    Projetos acadêmicos e pessoais criados para praticar lógica
+                    e desenvolvimento web.
+                </p>
             </div>
 
         </section>
 
         <!-- Seção obrigatória: Sobre mim -->
-        <section id="sobre" class="secao">
+        <section id="sobre" class="secao animar">
             <h2>Sobre mim</h2>
 
             <p>
-                Meu nome é Dori. Sou uma pessoa interessada por tecnologia,
-                desenvolvimento web e criação de soluções digitais. Atualmente estou
-                estudando os fundamentos de programação e criando meus primeiros projetos.
+                Sou uma profissional de Biologia em transição para a área de Tecnologia da
+                Informação, com foco em desenvolvimento de software.
             </p>
 
             <p>
-                Gosto de aprender coisas novas, ser gamer no tempo livre, e praticar programação para entender como os sites
-                são construídos. Este portfólio foi desenvolvido como parte dos meus estudos
-                usando apenas HTML, CSS e JavaScript.
+                Minha experiência anterior em projetos investigativos sobre comportamento animal
+                contribuiu para o desenvolvimento de habilidades como análise, observação,
+                organização, interpretação de dados e resolução de problemas.
             </p>
 
             <p>
-                Meus hobbies incluem estudar, assistir conteúdos sobre tecnologia, jogar,
-                acompanhar novidades da área e praticar projetos pessoais.
+                Durante minha formação no Bootcamp da Generation Brasil, tive contato com o
+                desenvolvimento FullStack e desenvolvi competências técnicas e comportamentais,
+                como comunicação, trabalho em equipe e mentalidade de crescimento.
             </p>
+
+            <p>
+                Atualmente, curso Ciência da Computação para aprofundar meus conhecimentos e
+                aprimorar minhas capacidades técnicas. Tenho interesse em construir soluções
+                digitais funcionais, acessíveis e bem planejadas.
+            </p>
+
+            <div class="hobbies">
+                <h3>Hobbies e interesses</h3>
+
+                <ul>
+                    <li>Gamer</li>
+                    <li>Assistir conteúdos sobre tecnologia</li>
+                    <li>Acompanhar novidades da área de TI</li>
+                    <li>Praticar projetos pessoais</li>
+                    <li>Aprender coisas novas</li>
+                    <li>Natureza</li>
+                </ul>
+            </div>
         </section>
 
         <!-- Seção obrigatória: Formação -->
-        <section id="formacao" class="secao">
+        <section id="formacao" class="secao animar">
             <h2>Formação</h2>
 
-            <div class="card">
-                <h3>Formação acadêmica</h3>
+            <div class="area-cards">
+                <div class="card">
+                    <h3>Ciência da Computação - UNINTER</h3>
+                    <p>
+                        Curso em andamento, com estudos em programação, lógica,
+                        banco de dados, estrutura de dados e desenvolvimento web.
+                    </p>
+                </div>
 
-                <p>
-                    Atualmente estou cursando Ciência da Computação e estudando conteúdos
-                    relacionados a programação, lógica, banco de dados e desenvolvimento web.
-                </p>
+                <div class="card">
+                    <h3>Bootcamp - Generation Brasil</h3>
+                    <p>
+                        Formação com foco em desenvolvimento FullStack, prática em projetos,
+                        trabalho em equipe, comunicação e mentalidade de crescimento.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Ciências Biológicas - USP</h3>
+                    <p>
+                        Formação anterior com experiência em pesquisa, análise de dados
+                        e projetos investigativos sobre comportamento animal.
+                    </p>
+                </div>
             </div>
 
-            <div class="card">
-                <h3>Cursos</h3>
-
-                <ul>
-                    <li>HTML5 básico</li>
-                    <li>CSS3 básico</li>
-                    <li>JavaScript básico</li>
-                    <li>Lógica de programação</li>
-                    <li>Git e GitHub</li>
-                </ul>
-            </div>
-
-            <div class="card">
+            <div class="idiomas">
                 <h3>Idiomas</h3>
 
-                <p>Português: nativo</p>
-                <p>Inglês: básico/intermediário, em desenvolvimento.</p>
+                <p><strong>Português:</strong> nativo</p>
+                <p><strong>Inglês:</strong> em desenvolvimento</p>
+            </div>
+        </section>
+
+        <!-- Seção extra: Habilidades -->
+        <section id="habilidades" class="secao animar">
+            <h2>Habilidades</h2>
+
+            <div class="area-habilidades">
+
+                <div class="habilidade">
+                    <h3>Frontend</h3>
+                    <p>HTML5, CSS3, JavaScript, TypeScript e React.</p>
+                </div>
+
+                <div class="habilidade">
+                    <h3>Backend</h3>
+                    <p>Java, Spring Boot e desenvolvimento de APIs.</p>
+                </div>
+
+                <div class="habilidade">
+                    <h3>Banco de Dados</h3>
+                    <p>MySQL e PostgreSQL.</p>
+                </div>
+
+                <div class="habilidade">
+                    <h3>Ferramentas</h3>
+                    <p>Git, GitHub, VS Code e organização de projetos.</p>
+                </div>
+
+                <div class="habilidade">
+                    <h3>Competências</h3>
+                    <p>Análise de dados, comunicação, organização e trabalho em equipe.</p>
+                </div>
+
+                <div class="habilidade">
+                    <h3>Aprendizado</h3>
+                    <p>Estudo contínuo, prática com projetos e evolução técnica.</p>
+                </div>
+
             </div>
         </section>
 
         <!-- Seção obrigatória: Portfólio -->
-        <section id="portfolio" class="secao">
+        <section id="portfolio" class="secao animar">
             <h2>Portfólio</h2>
 
             <p>
@@ -131,41 +231,52 @@
             <div class="area-projetos">
 
                 <div class="projeto">
-                    <h3>Site para Barbearia</h3>
+                    <img src="img/projeto1.png" alt="Imagem do projeto Barbearia Alura">
 
-                    <p>
-                        Projeto simples feito com HTML e CSS para praticar estrutura,
-                        textos, links, imagens e estilos.
-                    </p>
+                    <div class="conteudo-projeto">
+                        <h3>Site da Barbearia Alura</h3>
 
-                    <a href="https://github.com/dori-minante/Projeto-Barbearia-Alura" target="_blank">Ver projeto</a>
+                        <p>
+                            Site de uma barbearia mostrando os serviços oferecidos, hostória do local, formulário de contato e mapa de localização.
+                        </p>
+
+                        <a href="https://github.com/dori-minante/Projeto-Barbearia-Alura" target="_blank">Ver projeto</a>
+                    </div>
                 </div>
 
                 <div class="projeto">
-                    <h3>Blog Pessoal</h3>
+                    <img src="img/projeto2.png" alt="Imagem do projeto Blog Pessoal">
 
-                    <p>
-                        O projeto consiste em um blog pessoal, no qual os usuários têm a capacidade de se cadastrar e criar uma conta. Uma vez logados, eles podem criar seus próprios temas e publicações.
-                    </p>
+                    <div class="conteudo-projeto">
+                        <h3>Blog Pessoal</h3>
 
-                    <a href="https://github.com/dori-minante/blog-pessoal-client" target="_blank">Ver projeto</a>
+                        <p>
+                            O projeto consiste em um blog pessoal, no qual os usuários têm a capacidade de se cadastrar e criar uma conta. Uma vez logados, eles podem criar seus próprios temas e publicações.
+                        </p>
+
+                        <a href="https://github.com/dori-minante/blog-pessoal-client" target="_blank">Ver projeto</a>
+                    </div>
                 </div>
 
                 <div class="projeto">
-                    <h3>Site para Farmácia</h3>
+                    <img src="img/projeto3.png" alt="Imagem do projeto GreenGen">
 
-                    <p>
-                        Aplicativo para farmácia, onde usuários podem visualizar os produtos disponíveis, seus preços e descrições, e o administrador pode cadastrar novos produtos, editar os existentes e excluir produtos que não estão mais disponíveis.
-                    </p>
+                    <div class="conteudo-projeto">
+                        <h3>GreenGen</h3>
 
-                    <a href="https://github.com/dori-minante/Farmacia-front" target="_blank">Ver projeto</a>
+                        <p>
+                            Plataforma de e-commerce de produtos que utilizam energia solar. Site desenvolvido em grupo durante o Bootcamp da Generation Brasil.
+                        </p>
+
+                        <a href="https://github.com/GreenGen72/GreenGen-Client" target="_blank">Ver projeto</a>
+                    </div>
                 </div>
 
             </div>
         </section>
 
         <!-- Seção obrigatória: Contato -->
-        <section id="contato" class="secao">
+        <section id="contato" class="secao animar">
             <h2>Contato</h2>
 
             <p>
@@ -193,6 +304,7 @@
 
     <footer>
         <p>Desenvolvido por Dori - 2026</p>
+        <p>Portfólio criado com HTML5, CSS3 e JavaScript puro.</p>
     </footer>
 
     <script src="script.js"></script>
