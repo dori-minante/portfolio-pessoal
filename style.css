@@ -185,35 +185,39 @@ nav a:hover {
 /* Foto da seção inicial */
 .hero-imagem {
     width: 45%;
+    height: 430px;
     position: relative;
     text-align: center;
     animation: aparecerFoto 1s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .circulo-decorativo {
-    width: 380px;
-    height: 380px;
+    width: 360px;
+    height: 360px;
     border-radius: 50%;
     background: linear-gradient(135deg, #bfdbfe, #93c5fd, #c7d2fe);
     position: absolute;
-    top: 20px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     z-index: 1;
 }
 
 .hero-imagem::after {
     content: "";
-    width: 430px;
-    height: 430px;
+    width: 390px;
+    height: 390px;
     border: 3px solid #2563eb;
     border-left-color: transparent;
     border-bottom-color: transparent;
     border-radius: 50%;
     position: absolute;
-    top: -5px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
     z-index: 1;
     animation: girar 10s linear infinite;
 }
@@ -505,6 +509,22 @@ footer p {
     margin: 6px 0;
 }
 
+.links-rodape {
+    margin-top: 18px;
+}
+
+.links-rodape a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.links-rodape a:hover {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
+
 /* Tema claro ativado pelo JavaScript */
 .tema-claro {
     --cor-principal: #000080;
@@ -580,11 +600,11 @@ footer p {
 
 @keyframes girar {
     from {
-        transform: translateX(-50%) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg);
     }
 
     to {
-        transform: translateX(-50%) rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
 
