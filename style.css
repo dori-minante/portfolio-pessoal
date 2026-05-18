@@ -404,7 +404,7 @@ nav a:hover {
 
 .projeto:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 30px var(--sombra);
+    box-shadow: 0 15px 30px var(--sombra);    
 }
 
 .projeto img {
@@ -435,6 +435,23 @@ nav a:hover {
 
 .projeto a:hover {
     text-decoration: underline;
+}
+
+.tecnologias-projeto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.tecnologias-projeto span {
+    background-color: #020617;
+    color: #bfdbfe;
+    padding: 7px 11px;
+    border-radius: 20px;
+    border: 1px solid var(--cor-borda);
+    font-size: 13px;
+    font-weight: bold;
 }
 
 /* Formulário */
