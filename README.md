@@ -68,7 +68,7 @@ O projeto foi publicado utilizando o **GitHub Pages**.
 
 Acesse o site aqui:
 
-**https://dorivaniaminante.github.io/portfolio/**
+**https://dori-minante.github.io/portfolio/**
 
 ## Estrutura de pastas
 
